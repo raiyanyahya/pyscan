@@ -3,12 +3,11 @@ name: build-push
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 env:
     CONTAINER_IMAGE: docker.pkg.github.com/${{github.repository}}/pyscan:${{github.sha}}
     CONTAINER_IMAGE_LATEST: docker.pkg.github.com/${{github.repository}}/pyscan:latest
-
 jobs:
   build-tag-push:
     runs-on: ubuntu-latest
