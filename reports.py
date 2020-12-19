@@ -23,7 +23,7 @@ def prepare_report(reports_list: [str]) -> dict:
 
 
 def main():
-    reports_list = os.listdir('./hedvig/')
+    reports_list = os.listdir('./pyscan/')
     print(prepare_report(reports_list))
 
 
