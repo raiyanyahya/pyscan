@@ -17,7 +17,7 @@ def prepare_report(reports_list: [str]) -> dict:
                     if not line.startswith('*'):
                         response_dict[report].append(line)
         except Exception as e:
-            print('Exception caught --', e)
+            print('Exception caught ---->', e)
             exit_code(1)
     return response_dict
 
